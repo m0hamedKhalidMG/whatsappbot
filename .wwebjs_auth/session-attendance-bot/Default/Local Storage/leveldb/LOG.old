@@ -1,3 +1,6 @@
-2025/08/01-10:51:12.168 590c Reusing MANIFEST C:\Users\mahmo\Downloads\Telegram Desktop\whatsapp-attendance-bot\whatsapp-attendance-bot\.wwebjs_auth\session-attendance-bot\Default\Local Storage\leveldb/MANIFEST-000001
-2025/08/01-10:51:12.170 590c Recovering log #9
-2025/08/01-10:51:12.172 590c Reusing old log C:\Users\mahmo\Downloads\Telegram Desktop\whatsapp-attendance-bot\whatsapp-attendance-bot\.wwebjs_auth\session-attendance-bot\Default\Local Storage\leveldb/000009.log 
+2025/08/08-19:24:22.079 5bcc Reusing MANIFEST D:\f (1)\whatsapp-attendance-bot\.wwebjs_auth\session-attendance-bot\Default\Local Storage\leveldb/MANIFEST-000001
+2025/08/08-19:24:22.081 5bcc Recovering log #9
+2025/08/08-19:24:22.081 5bcc Reusing old log D:\f (1)\whatsapp-attendance-bot\.wwebjs_auth\session-attendance-bot\Default\Local Storage\leveldb/000009.log 
+2025/08/08-19:26:24.944 8b8 Level-0 table #13: started
+2025/08/08-19:26:24.949 8b8 Level-0 table #13: 15331 bytes OK
+2025/08/08-19:26:24.955 8b8 Delete type=0 #9
