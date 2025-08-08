@@ -4,4 +4,4 @@ node_modules/
 .idea
 notes.md
 .env
-.wwebjs_auth/
+# .wwebjs_auth/
