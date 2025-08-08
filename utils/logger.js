@@ -6,10 +6,10 @@ function log(message, isError = false) {
   const fullMessage = `[${timestamp}] ${message}\n`;
   const logPath = path.join(__dirname, '..', 'logs');
 
-  if (!fs.existsSync(logPath)) fs.mkdirSync(logPath);
+  // if (!fs.existsSync(logPath)) fs.mkdirSync(logPath);
 
-  const file = path.join(logPath, isError ? 'error.log' : 'activity.log');
-  fs.appendFileSync(file, fullMessage);
+  // const file = path.join(logPath, isError ? 'error.log' : 'activity.log');
+  // fs.appendFileSync(file, fullMessage);
   console[isError ? 'error' : 'log'](message);
 }
 
