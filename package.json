@@ -4,7 +4,7 @@
   "description": "Bot to send WhatsApp messages to parents when students are absent",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node notificationServer.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

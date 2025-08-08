@@ -4,3 +4,4 @@ node_modules/
 .idea
 notes.md
 .env
+.wwwebjs_auth
