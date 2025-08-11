@@ -10,13 +10,49 @@ const app = express();
 app.use(cors()); // ← enable CORS for all origins
 app.use(bodyParser.json());
 // POST /notifications/attendance
+// app.post('/notifications/attendance', async (req, res) => {
+//   const { students } = req.body;
+//   try {
+//     await bot.sendBulkNotifications(students);
+//     res.json({ success: true });
+//   } catch (err) {
+//     res.status(500).json({ message: err.message });
+//   }
+// });
 app.post('/notifications/attendance', async (req, res) => {
   const { students } = req.body;
   try {
-    await bot.sendBulkNotifications(students);
-    res.json({ success: true });
+    // إرسال لكل رقم وتخزين النتيجة
+    const results = await Promise.all(students.map(async (student) => {
+      try {
+        await bot.sendNotification(student.phone, student.message);
+        return {
+          phone: student.phone,
+          name: student.name || null,
+          status: 'success'
+        };
+      } catch (err) {
+        return {
+          phone: student.phone,
+          name: student.name || null,
+          status: 'failed',
+          error: err.message
+        };
+      }
+    }));
+
+    // الرد بالتقرير الكامل
+    res.json({
+      success: true,
+      total: students.length,
+      report: results
+    });
+
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    res.status(500).json({
+      success: false,
+      message: err.message
+    });
   }
 });
 
