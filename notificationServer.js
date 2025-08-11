@@ -46,19 +46,21 @@ const CHROME_PATH = '/usr/bin/chromium-browser';
 
 // إنشاء البوت مع إعدادات Puppeteer مناسبة للسيرفر
 const bot = new WhatsAppAttendanceBot({
-  puppeteer: {
-    headless: true,
+ puppeteer: {
+    headless: 'new', // جرب 'new' بدل true
     executablePath: CHROME_PATH,
     args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-gpu',
-      '--disable-software-rasterizer',
-      '--no-zygote',
-      '--single-process'
+        '--headless=new', // نجبره على الـ headless
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-gpu',
+        '--disable-software-rasterizer',
+        '--no-zygote',
+        '--single-process'
     ]
-  }
+}
+
 });
 
 bot.initialize();
