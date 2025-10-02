@@ -3,7 +3,7 @@
     "name": "سنتر كريم"
   },
   "whatsapp": {
-    "messageTemplate": "ولي أمر الطالب {studentName} في صف {className}، نود إعلامكم بأن الطالب تغيّب بتاريخ {date}. مع الشكر، {schoolName}.",
+    "messageTemplate": "مساء الخير، مع حضرتك تيم مستر كريم مصطفى 🌹\nحابين نبلغ حضرتك إن {studentName} لم يحضر حصة اليوم بتاريخ {date} في صف {className}.\nونتمنى الحرص على الالتزام بالحضور حفاظًا على المستوى الدراسي ✨\nمع الشكر، {schoolName}."
     "monthlyTemplate": "ولي أمر الطالب {studentName} في صف {className}، نود إعلامكم بأن الطالب تغيّب {absentCount} مرات حتى تاريخ {date}. مع الشكر، {schoolName}.",
     "paymentTemplate": "ولي أمر الطالب {studentName}، نود تذكيركم بأن رسوم شهر {month}/{year} لم يتم سدادها بعد. الرجاء التكرم بالسداد في أقرب فرصة. شكرًا لكم، {schoolName}."
   }
